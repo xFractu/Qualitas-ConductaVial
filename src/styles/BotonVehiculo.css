@@ -1,0 +1,82 @@
+.boton-vehiculo {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  background: white;
+  border: 3px solid #b20087;
+  border-radius: 20px;
+  padding: 0em 4.5em 0em 0.5em;
+  font-family: 'Arial', sans-serif;
+  color: #b20087;
+  font-weight: bold;
+  font-size: 4.2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  overflow: visible;
+  width: 6vw;
+  margin-top: 0.5em;
+}
+
+.boton-vehiculo .texto {
+  z-index: 1;
+  white-space: nowrap;
+  font-size: 4rem;
+}
+
+.boton-vehiculo .circulo {
+  position: absolute;
+  right: -20px;
+  background-color: #b20087;
+  color: white;
+  font-weight: bold;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem; /* mantenlo moderado */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.boton-vehiculo .circulo span {
+  transform: scale(0.5); /* esto agranda la letra */
+  display: inline-block;
+}
+
+/* Tablets pequeñas (modo vertical) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .boton-vehiculo {
+  font-size: 4.2rem;
+  width: 0vw;
+    padding: 0em 4.5em 0em 0.2em;
+}
+
+  .boton-vehiculo .texto {
+  font-size: 3rem;
+}
+
+.boton-vehiculo .circulo {
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 5rem;
+}
+}
+
+/* Tablets (modo horizontal) */
+@media (min-width: 900px) and (max-width: 1280px) and (orientation: landscape) {
+  
+}
+
+/* Laptops pequeñas / Tablets grandes */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .boton-vehiculo .texto {
+  font-size: 3.8rem;
+}
+
+.boton-vehiculo .circulo {
+  width: 1.5em;
+  height: 1.5em;
+}
+}
+
